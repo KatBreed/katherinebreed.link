@@ -1,0 +1,822 @@
+/* DEFAULTS */
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, a, article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    /* Cancel out some differences between browser defaults */
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Apply a natural box layout model to all elements, but allowing components to change it.
+ */
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+ul, ol {
+	list-style-position: inside;
+}
+
+nav ul, footer ul {
+	list-style-type: none;
+}
+
+
+/* TYPOGRAPHY */
+
+body {
+    line-height: 1.5;
+    font-family: Bodoni MT, "Lato", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 2rem;
+    line-height: 1;
+	text-align: center;
+}
+
+h2 { 
+    font-size: 1.25rem;
+}
+
+.sidebar h2 {
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 1.125rem;
+	text-align: left;
+}
+
+h4 {
+	text-align: center;
+}
+
+#site-title {
+    font-family: Edwardian Script ITC, Arial, Helvetica, sans serif;
+	font-size: 2rem;
+	text-align: center;
+}
+
+#tagline {
+	text-align: center;
+}
+
+#profile_name {
+	text-align: center;
+}
+
+p {     
+	text-align: justify;
+}
+
+/* CONTENT WRAPPERS */
+
+.homeBanner_wrap {
+    background-size: contain;
+    background-position: center;
+    padding: 1em;
+    color: #fff;
+    text-align: right;
+}
+
+.testimonialName, .testimonialText {
+	text-align: center;
+	font-style: italic;
+	margin: 0;
+}
+
+.testimonialName {
+	padding-bottom: 1em;
+}
+
+/* Instruments on main instrument page */
+
+.instrument_container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.instrument_wrap {
+    position: relative;
+    margin: 1em;
+}
+
+.instrument_img {
+    display: block;
+    margin: 0 auto;
+    padding: 1em;
+    width: 100%;
+    height: auto;
+    border: 1px solid #622a15;
+    background-color: #622a15;
+}
+
+#instrument_name {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* FORMS */
+
+.userform {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.userform-fields {
+	text-align: left;
+	width: 80%;
+	max-width: 100%;
+}
+
+.text {
+	height: 2.5em;
+	width: 20em;
+	max-width: 100%;
+}
+
+.textarea {
+	width: 22em;
+	max-width: 100%;
+}
+
+.action {
+	width: 8em;
+	height: 3em;
+	font-size: 1em;
+}
+
+/* TABLE */
+
+table {
+	margin: 1.2em;
+	max-width: 90%;
+}
+
+/* FOOTER */
+
+footer {
+    padding: 1em 0.5em;
+}
+
+/* IMAGES */
+
+img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+    height: auto;
+}
+
+.thumbnail_img {
+	display: block;
+	margin: 0 auto;
+	width: 60%;
+    height: auto;
+}
+
+.thumbnail_container {
+	border-top: 1px solid #622a15;
+	border-bottom: 1px solid #622a15;
+	margin: 0 1em;
+	padding-top: 1.2em;
+}
+
+#logo {
+    width: 5.5rem;
+    max-height: 100%;
+    padding-top: 0.8em;
+    padding-bottom: 0.5em;
+}
+
+#insta {
+    width: 3rem;
+    max-height: 100%;
+    padding-top: 0.5em;
+    padding-bottom: 1.5em;
+}
+
+/* COLOUR SCHEME */
+
+body {
+	color: #333;
+}
+
+header {
+    background-color: #F6EAB0;
+    color: #000000;
+}
+
+#main-menu, #main-menu ul.secondary {
+    background-color: #350f0f; 
+}
+
+#main-menu a {
+    color: #fff;
+}
+
+#main-menu a.current, #main-menu a:hover {
+    color: #ff0;
+}
+
+/* Other Links */
+.page_link, a {
+	color: #000000;
+	text-decoration: none;
+    transition: color 0.3s ease;
+}
+.page_link:hover, a:hover {
+    color:#122d98;
+}
+
+main {
+	background-color: #FBF7D5;
+}
+
+footer {
+    background-color: #350f0f;
+}
+
+footer, footer a {
+	color: #fff;
+}
+
+.userform-fields {
+	background-color: #622a15;
+}
+
+.left {
+	color: #fff;
+}
+
+.action {
+	color: #fff;
+	background-color: #622a15;
+}
+
+.luthier_link {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    background-color: #622a15;
+    transition: color 0.3s ease;
+    border-radius: 1.5em;
+    display: inline-block;
+    text-align: center;
+    max-width: 10em;
+    width: 100%;
+}
+
+.luthier_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* DEFAULT LAYOUT - SINGLE COLUMN */
+
+main, .sidebar {
+    width: 100%;
+}
+
+/* MARGINS, PADDING, AND BORDERS */
+
+main {
+	padding-bottom: 1em;
+}
+
+h1 {
+	padding: 0.5em;
+}
+
+h2 {
+	margin: 1em 0.8em;
+}
+
+h3 {
+	margin: 1em 1em;
+}
+
+h4 {
+	margin-bottom: 1em;
+	
+}
+
+#site-title {
+	margin: 0;
+	padding: 0;
+    max-width: 100%;
+}
+
+#tagline {
+	padding-bottom: 1em;
+    max-width: 100%;
+}
+
+#profile_name {
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+}
+
+.border_wrap {
+	padding: 1em 0;
+	margin: 0 1em;
+	border-top: 1px solid #622a15;
+	border-bottom: 1px solid #622a15;
+}
+
+.title_wrap {
+	margin: 0 1em;
+	border-bottom: 1px solid #622a15;
+}
+
+p {
+	margin: 0 1em; 
+	padding: 0.5em 0
+}
+
+/* FORMS */
+
+.userform-fields {
+	border-radius: 1.5em;
+	padding: 3em
+}
+
+.text {
+	margin-bottom: 2.5em;
+}
+
+.action {
+	margin-top: 1.5em;
+	margin-bottom: 0.5em;
+	border-radius: 1.5em;
+}
+
+/* NEWS AND BLOGS */
+.post-summary {
+    border-top: 1px solid #000;
+}
+
+/* MOBILE MENU */
+
+#main-menu {
+    height: 100%;
+    width: 0;
+    max-width: 30em;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 3.75rem;
+    transition: 0.33s; /* Transition effect to slide in the sidenav */
+}
+
+#main-menu.menu-open {
+    width: 100%;
+}
+
+#main-menu ul {
+	white-space: nowrap;
+}
+
+#main-menu li {
+    font-size: 1.125rem;
+    padding: 0.5em 2em;
+}
+
+#main-menu li a {
+    text-decoration: none;
+    /* display: block; */
+	font-family: Garamond;
+}
+
+#main-menu ul.secondary {
+    margin-top: 0.5em;
+}
+
+
+#menu-open-button, #menu-close-button {
+    font-weight: 400;
+    line-height: 1;
+    padding: 0;
+    position: absolute;
+    right: 1rem;
+    background: transparent;
+    border: 0;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* The font size and top of the two "buttons" needs adjusting to get them to appear
+   the same. */
+#menu-open-button {
+    font-size: 2rem;
+    top: 1rem;
+}
+
+#menu-close-button {
+    font-size: 2.75rem;
+    top: 0.6rem;
+}
+
+
+/*  MEDIUM LAYOUT ======================================================================
+
+    A layout with two content columns and flexible white space on either side.
+
+    If no sidebars are required, then the code for the Page grid can be removed.
+
+    Calculate the media query's break point size by adding together the two main content
+    columns in the grid, three times the column-gap (because there are four columns
+    there are three gaps between them), and two to allow for the vertical
+    scroll bar. This template's default width is calculated like this:
+    36rem + 24rem + (3 x 2rem) + 2rem = 68em (note we use em, not rem, as the
+    break point unit). */
+@media screen and (min-width: 68em) {
+    
+    /* Page grid
+    
+    Create a four-column grid:
+    1. The first column allows for white space to the left of the main content.
+    2. The second column contains the main content.
+    3. The third column contains the two sidebars (#1 above #2).
+    4. The fourth column allows for white space to the right of the sidebars.
+    
+    The header, main menu, and footer are the full width of the window (spanning all 
+    four columns). This can be altered by changing their grid-column values.
+    
+    The height of the fourth row will be flexible, so that sidebar #1 will have its
+    content's height and sidebar #2 can increase its height if needed. The need
+    for this arises if the main element has more height than the two sidebars
+    combined.    */
+
+    body {
+        display: grid;
+        grid-template-columns: 1fr 68em 1fr;
+        grid-template-rows: min-content min-content min-content 1fr min-content;
+        grid-template-areas: "header  header    header" 
+                             "menu    menu       menu"
+                             ".       main        ."
+                             ".       main        ."
+                             "footer  footer    footer";
+        /*column-gap: 2em;*/
+    }
+    
+    header {
+        grid-area: header;    
+    }
+    
+    #main-menu {
+        grid-area: menu;
+    }
+    
+    main {
+        grid-area: main;
+    }
+    
+    #sidebar-one {
+        grid-area: sidebar-one;
+    }
+    
+    #sidebar-two {
+        grid-area: sidebar-two;
+    }
+    
+    footer {
+        grid-area: footer;
+    }
+           
+    main, .sidebar {
+        /* Override the max-width set above for single-column layout. */
+        max-width: 100%;
+    }
+
+    /* End of page grid */
+
+
+    /* Header layout */
+    
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #logo {
+        width: 10rem;
+        max-height: 100%;
+        padding-left: 2em;
+        padding-top: 1em;
+    }
+    
+    header > div {
+        /* The div in the header takes up all remaining space in the flexbox
+           and its content is centred. */
+        flex-grow: 1;
+        text-align: center;
+    }
+    
+    /* Main menu
+    
+       Now we change to a visible main menu, so we have to override the 
+       mobile menu above. */
+    
+    #main-menu {
+        position: static;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        transition: 0s;
+    }
+
+    #menu-open-button, #menu-close-button {
+        display: none;
+    }
+    
+    #main-menu ul {
+        display: flex;
+        justify-content: center;
+        /* To get the main menu to sit above the two columns, it 
+            needs to be the same width as the total of those columns (see above). */
+        /* width: 62rem; */
+        /* margin: 0 auto; */
+    }
+    
+    #main-menu li {
+        margin: 0.5em 2em;
+        padding: 0;
+    }
+    
+    #main-menu ul.secondary {
+        visibility: hidden;
+        opacity: 0;
+        position: absolute;
+        transition: all 0.5s ease;
+        /* Negative left margin means the menu items will line up with the 
+           parent menu item. */
+        margin: 0 0 0 -1em;
+        padding: 0;
+        display: none;
+    }
+    
+    #main-menu li:hover > ul.secondary {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+        width: auto;
+    }
+    
+    #main-menu ul.secondary li {
+        margin: 0.5em 1em;
+    }
+    
+    footer {
+        padding: 1em;
+    }
+
+    /* TYPOGRAPHY */
+    
+    #site-title {
+        font-size: 4rem;
+		margin: 0;
+		padding: 0;
+    }
+	
+	#tagline {
+		margin-bottom: 1em;
+	}
+	
+	h1 {
+		margin: 0.5em 0 0.5em 0;
+	}
+	
+	h2 {
+		margin: 1em 3.2em;
+	}
+	
+	h3 {
+		margin: 1em 3.5em;
+        text-align: left;
+	}
+	
+	h4 {
+		margin-bottom: 1em;
+	}
+	
+	p {
+		margin: 0 4em;
+        max-width: 36rem;
+	}
+
+    /* FOOTER */
+
+    footer {
+        padding: 2em;
+    }
+
+    .footer_wrap {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .footer_info1, .footer_info2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+	
+	/* CONTENT WRAPPERS */
+	
+    .border_wrap {
+		margin: 0 4em;
+		padding-bottom: 1em;
+	}	
+	
+	.title_wrap {
+		margin: 0 4em;
+	}
+
+
+    .content_wrap, .post-summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .content_wrap2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        max-width: 36rem;
+        margin-left: 12em;
+    }
+
+    .homeBanner_wrap {
+        background-size: cover;
+        background-position: center;
+        padding: 2em;
+        color: #fff;
+        text-align: right;
+    }
+	
+	.homeContent_wrap {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	#homeContent1 {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		margin: 0 3.5em 0 0;
+	}
+
+    /* Instruments on main instrument page */
+
+    .instrument_wrap {
+        width: 20%;
+        height: auto;
+    }
+	
+	/* IMAGES */
+	
+	img {
+		width: 50%;
+		height: auto;
+	}
+	
+	.thumbnail_container {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		flex-wrap: wrap;
+		margin: 0 4em;
+	}
+	
+	.thumbnail_img {
+	margin: 0 auto;
+	width: 60%;
+    height: auto;
+	}
+	
+	/* FORMS */
+
+	.userform-fields {
+		margin-top: 1em;
+		width: 40%;
+		max-width: 100%;
+	}
+
+	.text {
+		width: 32em;
+		max-width: 100%
+	}
+
+	.textarea {
+		width: 34em;
+		max-width: 100%;
+	}
+	
+	/* TABLE */
+	
+	table {
+	margin: 0 4em  1.5em 4em;
+	max-width: 53%;
+	}
+}
+
+
+/* LARGE LAYOUT ======================================================================
+
+   A three-column layout with a left-hand sidebar column, a central main column, and a
+   right-hand sidebar column. If you do not need to have two sidebar columns, then 
+   simply delete this media query. */
+
+@media screen and (min-width: 94em) {
+
+    /* Page grid 
+    
+       We can use the grid areas applied to the structural elements above and
+       simply change the number of columns and grid-template-areas here. */    
+
+    body {        
+        grid-template-columns: 1fr 72em 1fr;
+        grid-template-rows: min-content min-content 1fr min-content;
+        grid-template-areas: "header  header  header"
+                             "menu    menu    menu"
+                             ".       main      ."
+                             "footer  footer  footer";
+    }
+
+	/* CONTENT WRAPPERS */
+	
+	#homeContent1 {
+		margin: 0 3em;
+	}
+	
+    .content_wrap2 {
+        margin-left: 14em;
+    }
+	
+    /* IMAGES */
+	
+    img {
+		width: 50%;
+		height: auto;
+	}
+
+    .thumbnail_img {
+        width: 70%;
+        height: auto;
+        }
+	
+	/* FORMS */
+
+	.userform-fields {
+		width: 45%;
+		max-width: 100%;
+	}
+
+	.text {
+		width: 37em;
+		max-width: 100%
+	}
+
+	.textarea {
+		width: 39em;
+		max-width: 100%;
+	}
+	
+	/* TABLE */
+	table {
+		max-width: 50%;
+	}
+}
