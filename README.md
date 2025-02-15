@@ -1,3 +1,6 @@
+## About this project
+This is my website project for Luthiers in completion of my L5 Diploma in Web Development and Design at Ara in Christchurch, NZ. The website can be found at katherinebreed.link
+
 ## Overview
 
 [![CI](https://github.com/silverstripe/silverstripe-installer/actions/workflows/ci.yml/badge.svg)](https://github.com/silverstripe/silverstripe-installer/actions/workflows/ci.yml)
